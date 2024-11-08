@@ -4,7 +4,7 @@ import Game.Lemmas.Limits.Basic
 
 World "Limit"
 
-Level 4
+Level 8
 
 
 -- use the ε, δ definition to prove that lim_{x → 1} frac {2x^2 + 3x - 2}{ x+2} =1
@@ -49,3 +49,4 @@ Statement : lim x → 1,  (2*x^2 + 3*x - 2)/(x+2) = 1 := by
     --rw[h1]
     --simp
 
+NewTactic ring_nf

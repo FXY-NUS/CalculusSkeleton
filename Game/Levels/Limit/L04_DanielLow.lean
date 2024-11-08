@@ -4,7 +4,7 @@ import Game.Lemmas.Limits.Basic
 
 World "Limit"
 
-Level 8
+Level 4
 lemma h0 (x:ℝ): (-8*x + 7- -9) =16-8*x:= by
   ring
 lemma hk :|-8|=8:= by
@@ -26,3 +26,5 @@ Statement:  lim x → 2, (-8*x + 7) = -9 := by
   have h6 (x:ℝ):|-8 * x + 7 - -9| = 8* |x-2| := by rw[h1, h2, h3,h4,h5]
   rw[h6]
   linarith
+
+NewTactic ring_nf
